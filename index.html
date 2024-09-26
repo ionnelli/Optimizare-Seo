@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 
 <head>
@@ -8,7 +8,7 @@
     <meta name="keywords" content="creare website, optimizare SEO, web development, SEO, marketing online, Ioneli Development">
     <meta name="author" content="Ioneli Development">
     <title>Creare Website și Optimizare SEO | Ioneli Development</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -25,9 +25,15 @@
     <meta property="og:image" content="https://ionnelli.me/images/seo-website.jpg">
 
     <script>
-        function openLink(url) {
-            window.open(url, '_blank');
-        }
+        // JavaScript pentru a șterge nofollow dacă există
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                if (link.hasAttribute('rel') && link.getAttribute('rel') === 'nofollow') {
+                    link.removeAttribute('rel');
+                }
+            });
+        });
     </script>
 </head>
 
@@ -41,13 +47,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/contact')">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/pret-creare-website')">Prețuri</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/portofolio')">Portofoliu</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/optimizare-seo')">Optimizare SEO</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/publicitate')">Publicitate</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/creare-website')">Creare Website</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="openLink('https://ionnelli.me/mentenanta-website')">Mentenanță Website</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/contact" target="_blank">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/pret-creare-website" target="_blank">Prețuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/portofolio" target="_blank">Portofoliu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/optimizare-seo" target="_blank">Optimizare SEO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/publicitate" target="_blank">Publicitate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/creare-website" target="_blank">Creare Website</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ionnelli.me/mentenanta-website" target="_blank">Mentenanță Website</a></li>
                 </ul>
             </div>
         </div>
@@ -58,7 +64,7 @@
         <div class="container">
             <h1 class="display-4">Creare Website și Optimizare SEO</h1>
             <p class="lead">Dezvoltăm soluții profesionale pentru afacerea ta. Creștem vizibilitatea și performanța online.</p>
-            <button class="btn btn-light" onclick="openLink('https://ionnelli.me/contact')">Solicită o ofertă</button>
+            <a href="https://ionnelli.me/contact" target="_blank" class="btn btn-light">Solicită o ofertă</a>
         </div>
     </header>
 
@@ -66,42 +72,42 @@
     <section class="container my-5">
         <h2>Serviciile Noastre</h2>
         <div class="row">
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/creare-website')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Creare Website</h3>
+                    <h3><a href="https://ionnelli.me/creare-website" target="_blank">Creare Website</a></h3>
                     <p>Dezvoltăm website-uri personalizate pentru afacerea ta.</p>
                 </div>
             </div>
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/optimizare-seo')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Optimizare SEO</h3>
+                    <h3><a href="https://ionnelli.me/optimizare-seo" target="_blank">Optimizare SEO</a></h3>
                     <p>Îmbunătățim vizibilitatea site-ului tău pe motoarele de căutare.</p>
                 </div>
             </div>
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/mentenanta-website')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Mentenanță Website</h3>
+                    <h3><a href="https://ionnelli.me/mentenanta-website" target="_blank">Mentenanță Website</a></h3>
                     <p>Asigurăm mentenanță și actualizări pentru site-ul tău.</p>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/publicitate')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Publicitate</h3>
+                    <h3><a href="https://ionnelli.me/publicitate" target="_blank">Publicitate</a></h3>
                     <p>Campanii publicitare eficiente pentru a-ți crește afacerea.</p>
                 </div>
             </div>
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/portofolio')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Portofoliu</h3>
+                    <h3><a href="https://ionnelli.me/portofolio" target="_blank">Portofoliu</a></h3>
                     <p>Vezi realizările noastre recente și proiectele de succes.</p>
                 </div>
             </div>
-            <div class="col-md-4" onclick="openLink('https://ionnelli.me/pret-creare-website')">
+            <div class="col-md-4">
                 <div class="service-box bg-light p-4 mb-4 text-center shadow-sm">
-                    <h3>Prețuri</h3>
+                    <h3><a href="https://ionnelli.me/pret-creare-website" target="_blank">Prețuri</a></h3>
                     <p>Află mai multe despre prețurile noastre competitive.</p>
                 </div>
             </div>
@@ -111,7 +117,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Ioneli Development. Toate drepturile rezervate.</p>
-        <a href="https://ionnelli.me" class="text-white" onclick="openLink('https://ionnelli.me')">Vizitează-ne</a>
+        <a href="https://ionnelli.me" target="_blank" class="text-white">Vizitează-ne</a>
     </footer>
 
     <!-- Bootstrap JS -->
